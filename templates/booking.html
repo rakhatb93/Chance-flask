@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title></title>
+     <link rel="stylesheet", href="{{ url_for('static', filename='css/styles.css') }}">
+   </head>
+   
+   <body>
+      <h1>Выберите язык: </h1>
+      <blockquote>
+      
+      <div class="studentname">
+         <h3 class="inline">Имя: </h3>
+         <form action='/booking', method='POST'>
+         {{ form.csrf_token }}
+         {{ form.fullname }}
+         {{ form.dob }}
+         </form>
+      </div>
+
+      <div class="birthdate">
+        <form>
+           <h3 class="inline">Дата рождения: </h3><input name="date of birth" type="date"> 
+        </form>
+      </div>
+
+      <div class="languages">
+          <form>
+           <h3 class="inline"><label for="langs">Какой язык Вы хотели бы изучать?</label></h3>
+           <input list="languages" name="langs" id="langs" placeholder="Язык">
+           
+           <datalist id="languages">
+                 <option value="English">
+                 <option value="Espanol">
+           </datalist>
+          </form>
+      </div>
+
+      <div>
+         <a href='booking.html' class='sendbutton'><button>Отправить</button></a>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Welcome to Chance Karaganda</title>
+     <link rel="stylesheet", href="{{ url_for('static', filename='css/styles.css') }}">
+   </head>
+   
+   <body>
+      <h1>CHANCE KARAGANDA</h1>
+
+      <div>
+        <h2 class="description">Курсы английского и испанского языков онлайн и в классе.</h2></br>
+      </div>   
+
+      <div class="tel"> 
+        <h2>Телефон: +7 702 655 91 99</h2>
+      </div>
+
+      <div class="booking">
+        <a href="{{url_for('booking')}}" class='btn btn-primary'>Забронируйте Ваш курс</a>
+      </div>
+
+      <div class="cost">
+        <a target="blank" href="{{url_for('cost')}}" class='btn btn-primary'>Посмотреть стоимость курсов</a>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Стоимость курсов</title>
+     <link rel="stylesheet", href="{{ url_for('static', filename='css/styles.css') }}">
+     <style>
+        table{
+              border: 3px solid blue;
+              font size: 15px;
+              }
+        td, th{
+          border: 1px solid blue;
+          border-collapse: collapse;
+           }
+
+     </style>
+   </head>
+   <body>
+      <table>
+        <thead>
+            <th>Language</th>
+            <th>Cost per month</th>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>English</td>
+            <td>22 0000 tg</td>
+          </tr>
+          <tr>
+            <td>Espanol</td>
+            <td>24 0000 tg</td>
+          </tr>
+        </tbody> 
+      </table>
+   </body>
+</html>
