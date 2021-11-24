@@ -1,0 +1,107 @@
+body{
+     background-color: #c7ffe0;
+     margin: 15px;
+     padding: 15px;
+     font-family: Arial, sans-serif;
+     font-weight: bold;
+     }
+
+h1{
+   color: #3a005e;
+   text-align: center;
+   margin: 15px; 
+    }
+
+.descrition{
+   text-align: center;
+        }
+
+.cost{
+    background-color: orange;
+    position: absolute;
+    width: 170px;
+    top: 250px;
+    left: 400px;
+    font-family: Candara, sans-serif;
+    font-size: 20px;
+      }
+
+.tel{
+   position: absolute;
+   top: 90px;
+   left: 800px;
+    }
+
+.booking{
+    background-color: orange;
+    position: absolute;
+    width: 200px;
+    top: 140px;
+    left: 870px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+       }
+
+button:hover{
+    background-color: lightblue;
+            }
+
+.inline{
+    display: inline-block;
+    padding: 7px;
+     }
+
+.studentname{
+      margin-bottom: 5px;
+          }
+
+.studentname{
+    position: absolute;
+    top: 100px;
+    left: 850px;
+     }
+
+.birthdate{
+    position: absolute;
+    top: 155px;
+    left: 757px;
+          }
+
+.languages{
+    position: absolute;
+    top: 210px;
+    left: 600px;
+          }
+
+.sendbutton{
+    position: absolute;
+    top: 775px;
+    left: 535px;
+           }
+
+table{
+    color: blue;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin: 15px;
+      }
+
+td, th{
+       border: 1px solid blue;
+       border-collapse: collapse;   
+       padding: 5px;
+      }
+
+@media (min-width: 600px) { 
+       body{
+            background-color: #c7ffe0;
+           }         
+       }
+
+@media (max-width: 599px) { 
+       body{
+            background-color: yellow;
+           }         
+       }
